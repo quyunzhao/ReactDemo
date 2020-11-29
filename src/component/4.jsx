@@ -46,9 +46,9 @@ class App extends Component {
       <div>
         <button onClick={this.handleClick.bind(this)}>重置</button>
         <button onClick={() => this.handleClick2()}>添加</button>
-
         <ul>
           {this.state.list.map((v, k) => {
+            // key 值一般设置为数据的ID 值 减少不必要的 dom 操作
             return <li key={v.id}>{v.value}</li>;
           })}
         </ul>
