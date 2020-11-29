@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "this.props的使用（父传子）"
+git commit -m "key 值得使用"
 
 git push
