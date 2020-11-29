@@ -31,6 +31,8 @@ export default class One extends Component {
         <hr />
 
         <p>{this.state.num}</p>
+        {/* bind 传值的写法 */}
+        {/* 事件对象是隐式传值 */}
         <input
           type="text"
           value={this.state.num}
@@ -39,6 +41,7 @@ export default class One extends Component {
         <hr />
 
         <p>{this.state.num2}</p>
+        {/* 箭头函数需要显式传递事件对象 */}
         <input
           type="text"
           value={this.state.num2}
