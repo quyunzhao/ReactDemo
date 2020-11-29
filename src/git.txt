@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "tab案例"
+git commit -m "this.props的使用（父传子）"
 
 git push
