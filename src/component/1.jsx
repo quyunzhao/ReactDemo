@@ -7,9 +7,9 @@ export default class One extends Component {
       num: 20,
     };
   }
-  handlerChange(e) {
-    const value = e.target.value;
-    console.log(value);
+  handlerChange(ee) {
+    const value = ee.target.value;
+    // console.log(value);
     this.setState({ num: value }, function () {
       console.log(this.state.num);
     });

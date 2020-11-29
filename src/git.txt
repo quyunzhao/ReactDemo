@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "绑定文本框的值"
+git commit -m "tab案例"
 
 git push
