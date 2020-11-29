@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "key 值一般设置为数据的ID 值 减少不必要的 dom 操作"
+git commit -m "双向绑定箭头函数"
 
 git push
