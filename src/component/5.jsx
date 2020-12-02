@@ -1,3 +1,5 @@
+// 验证props 的属性值的类型
+
 import React, { Component } from "react";
 
 // 导入校验包

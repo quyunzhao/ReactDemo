@@ -1,3 +1,5 @@
+// 多级 传递props 属性值
+
 import React, { Component } from "react";
 
 class ChildChild extends Component {

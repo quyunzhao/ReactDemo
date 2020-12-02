@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "使用context进行props 属性值的多级传递"
+git commit -m "子组件传值给父组件"
 
 git push
