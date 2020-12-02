@@ -60,6 +60,8 @@ export default class App extends Component {
         >
           子元素
         </Child> */}
+        {/* 传递了 fatherChange 方法给子组件调用 */}
+        {/* 子组件通过 this.props.fatherChange() 调用  */}
         <Child
           fatherChange={(val) => {
             this.fatherChange(val);
