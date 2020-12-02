@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "双向绑定箭头函数"
+git commit -m "PropTypes的使用"
 
 git push
