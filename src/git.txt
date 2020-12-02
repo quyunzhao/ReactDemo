@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "PropTypes的使用"
+git commit -m "props 属性值的多级传递"
 
 git push
