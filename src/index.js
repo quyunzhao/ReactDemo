@@ -13,15 +13,21 @@ import "./index.css";
 // import App from "./component/9";
 // import App from "./component/10";
 // import App from "./component/11";
-import App from "./component/12";
+// import App from "./component/12";
+import App from "./component/13";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
-setTimeout(() => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <div>hello word</div>
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
-}, 3000);
+// setTimeout(() => {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       <div>hello word</div>
+//     </React.StrictMode>,
+//     document.getElementById("root")
+//   );
+// }, 3000);
