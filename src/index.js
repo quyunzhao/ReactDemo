@@ -11,7 +11,8 @@ import "./index.css";
 // import App from "./component/7";
 // import App from "./component/8";
 // import App from "./component/9";
-import App from "./component/10";
+// import App from "./component/10";
+import App from "./component/11";
 
 ReactDOM.render(
   <React.StrictMode>
