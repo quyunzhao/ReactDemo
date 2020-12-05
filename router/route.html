@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#/index">首页</a></li>
+      <li><a href="#/list">列表页</a></li>
+      <li><a href="#/discover">发现</a></li>
+      <li><a href="#/about">关于</a></li>
+    </ul>
+    <hr />
+    <div id="router"></div>
+    <script>
+      // 定义一个路由（多个路线，多个对应关系）
+      let routes = {
+        //  url 和 视图 的对应关系
+        "#/index": "./index.html",
+        "#/list": "./list.html",
+        "#/discover": "./discover.html",
+        "#/about": "./about.html",
+      };
+
+      // 给窗口添加事件，当哈希值发生变化的时候 #router 盒子加载对应视图
+      window.addEventListener("hashchange", () => {
+        const curry = routes[location.hash];
+        console.log(curry);
+
+        $("#router").load(curry);
+      });
+    </script>
+  </body>
+</html>
