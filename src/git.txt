@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "react-router的基本使用"
+git commit -m "react-router的嵌套使用"
 
 git push

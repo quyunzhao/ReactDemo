@@ -13,12 +13,14 @@ export default class App extends Component {
       <div>
         <ul>
           <li>
-            <a href="#/home">首页</a>
+            <a href="#/app/home">首页</a>
           </li>
           <li>
-            <a href="#/list">列表</a>
+            <a href="#/app/list">列表</a>
           </li>
         </ul>
+        <hr />
+        {this.props.children}
       </div>
     );
   }
@@ -27,9 +29,12 @@ export default class App extends Component {
 // 定义路由
 let routes = (
   <Router history={hashHistory}>
-    <Route path="/" component={App} />
-    <Route path="/home" component={Home} />
-    <Route path="/list" component={List} />
+    <Route path="/app" component={App}>
+      {/* 相对路径的写法 */}
+      <Route path="home" component={Home} />
+      {/* 绝对路径的写法 */}
+      <Route path="/app/list" component={List} />
+    </Route>
   </Router>
 );
 
