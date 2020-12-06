@@ -4,6 +4,6 @@ git pull
 
 git add .
 
-git commit -m "路由传参"
+git commit -m "其他路由组件"
 
 git push
