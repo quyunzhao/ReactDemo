@@ -6,6 +6,7 @@ import { Router, Route, hashHistory } from "react-router";
 // 引入对应的组件
 import Home from "./Home";
 import List from "./List";
+import Detail from "./Detail";
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,9 @@ export default class App extends Component {
           </li>
           <li>
             <a href="#/app/list">列表</a>
+          </li>
+          <li>
+            <a href="#/app/detail/1345">详情</a>
           </li>
         </ul>
         <hr />
@@ -34,6 +38,7 @@ let routes = (
       <Route path="home" component={Home} />
       {/* 绝对路径的写法 */}
       <Route path="/app/list" component={List} />
+      <Route path="/app/detail/:id" component={Detail} />
     </Route>
   </Router>
 );
