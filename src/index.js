@@ -33,3 +33,5 @@ import App from "./reactRouter/App";
 //     document.getElementById("root")
 //   );
 // }, 3000);
+
+// ReactDOM.render(<App />, document.getElementById("root"));
