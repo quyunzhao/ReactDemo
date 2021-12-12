@@ -20,9 +20,9 @@ class Child extends Component {
     console.log("1.1 constructor 组件初始化方法");
   }
 
-  UNSAFE_componentWillMount() {
-    console.log("1.2 componentWillMount 在挂载数据之前需要执行的方法");
-  }
+  // UNSAFE_componentWillMount() {
+  //   console.log("1.2 componentWillMount 在挂载数据之前需要执行的方法");
+  // }
 
   componentDidMount() {
     console.log("1.4 componentDidMount 在挂载数据之后需要执行的方法");
