@@ -1,14 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 // 引入路由模块
-import {
-  Router,
-  Route,
-  hashHistory,
-  IndexRoute,
-  IndexRedirect,
-  Link,
-} from "react-router";
+import { Router, Route, hashHistory, IndexRedirect, Link } from "react-router";
 
 // 引入对应的组件
 import Home from "./Home";
@@ -20,16 +13,6 @@ export default class App extends Component {
     return (
       <div>
         <ul>
-          {/* <li>
-            <a href="#/app/home">首页</a>
-          </li>
-          <li>
-            <a href="#/app/list">列表</a>
-          </li>
-          <li>
-            <a href="#/app/detail/1345">详情</a>
-          </li> */}
-
           <li>
             <Link to="/app/home">首页</Link>
           </li>
@@ -48,7 +31,7 @@ export default class App extends Component {
 }
 
 // 定义路由
-let routes = (
+const routes = (
   <Router history={hashHistory}>
     <Route path="/app" component={App}>
       {/* IndexRoute 在保持 /app 路径不变的情况下，设置默认的展示页面 */}
