@@ -32,9 +32,9 @@ export default class App extends Component {
 
   // ——————————————————————————————————————————————————
   // 第二阶段 更新期
-  componentWillReceiveProps(nextProps) {
-    console.log("2.1 componentWillReceiveProps 在接收 props 属性之前");
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   console.log("2.1 componentWillReceiveProps 在接收 props 属性之前");
+  // }
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log("2.2 shouldComponentUpdate ");

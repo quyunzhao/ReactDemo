@@ -35,11 +35,11 @@ class Child extends Component {
   }
   // ——————————————————————————————————————————————————
   // 第二阶段 更新期
-  UNSAFE_componentWillReceiveProps(nextProps) {
-    console.log("2.1 componentWillReceiveProps 在接收 props 属性之前");
-    console.log("fatherNum 的旧值：", this.props.fatherNum);
-    console.log("fatherNum 的新值：", nextProps.fatherNum);
-  }
+  // UNSAFE_componentWillReceiveProps(nextProps) {
+  //   console.log("2.1 componentWillReceiveProps 在接收 props 属性之前");
+  //   console.log("fatherNum 的旧值：", this.props.fatherNum);
+  //   console.log("fatherNum 的新值：", nextProps.fatherNum);
+  // }
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log("2.2 shouldComponentUpdate ");
