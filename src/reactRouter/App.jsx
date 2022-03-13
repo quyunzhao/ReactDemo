@@ -48,7 +48,7 @@ export default class App extends Component {
 }
 
 // 定义路由
-let routes = (
+const routes = (
   <Router history={hashHistory}>
     <Route path="/app" component={App}>
       {/* IndexRoute 在保持 /app 路径不变的情况下，设置默认的展示页面 */}
