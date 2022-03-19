@@ -4,9 +4,10 @@ import ReactDOM from "react-dom";
 import { Router, Route, hashHistory, IndexRedirect, Link } from "react-router";
 
 // 引入对应的组件
-import Home from "./Home";
-import List from "./List";
-import Detail from "./Detail";
+import Home from "../component/Home";
+import List from "../component/List";
+import Detail from "../component/Detail";
+import Test from "../component/Test";
 
 export default class App extends Component {
   render() {
@@ -21,6 +22,9 @@ export default class App extends Component {
           </li>
           <li>
             <Link to="/app/detail/1345">详情</Link>
+          </li>
+          <li>
+            <Link to="/app/test">测试</Link>
           </li>
         </ul>
         <hr />
@@ -45,6 +49,7 @@ const routes = (
       {/* 绝对路径的写法 */}
       <Route path="/app/list" component={List} />
       <Route path="/app/detail/:id" component={Detail} />
+      <Route path="/app/test" component={Test} />
     </Route>
   </Router>
 );
