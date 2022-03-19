@@ -1,7 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 export default function Test() {
   const inputDom = useRef();
+
+  const [mouseInfo, setMouseInfo] = useState({ clientX: "", clientY: "" });
 
   // 调用子元素回调 numTimes 次，来重复生成组件
   function Repeat(props) {
@@ -37,6 +39,18 @@ export default function Test() {
           </div>
         )}
       </Repeat>
+
+      <div
+        style={{ height: "100vh" }}
+        onMouseMove={(event) => {
+          setMouseInfo({ clientX: event.clientX, clientY: event.clientY });
+        }}
+      >
+        <h1>移动鼠标!</h1>
+        <p>
+          当前的鼠标位置是 ({mouseInfo.clientX}, {mouseInfo.clientY})
+        </p>
+      </div>
     </div>
   );
 }

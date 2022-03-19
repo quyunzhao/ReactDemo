@@ -8,6 +8,7 @@ import Home from "../component/Home";
 import List from "../component/List";
 import Detail from "../component/Detail";
 import Test from "../component/Test";
+import Cat from "../component/Cat";
 
 export default class App extends Component {
   render() {
@@ -25,6 +26,9 @@ export default class App extends Component {
           </li>
           <li>
             <Link to="/app/test">测试</Link>
+          </li>
+          <li>
+            <Link to="/app/cat">Cat</Link>
           </li>
         </ul>
         <hr />
@@ -50,6 +54,7 @@ const routes = (
       <Route path="/app/list" component={List} />
       <Route path="/app/detail/:id" component={Detail} />
       <Route path="/app/test" component={Test} />
+      <Route path="/app/cat" component={Cat} />
     </Route>
   </Router>
 );
