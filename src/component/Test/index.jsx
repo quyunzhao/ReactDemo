@@ -1,16 +1,25 @@
-import React, { Component } from "react";
+import React, { useRef } from "react";
 
-export default class Detail extends Component {
-  componentDidMount() {
-    // 发起异步请求
-  }
+export default function Test() {
+  const inputDom = useRef();
 
-  render() {
-    return (
-      <div>
-        <h1>详情</h1>
-        <p>{this.props.routeParams.id}</p>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <input
+        type="text"
+        ref={(ref) => {
+          if (ref) {
+            inputDom.current = ref;
+          }
+        }}
+      />
+      <input
+        type="button"
+        value="Focus the text input"
+        onClick={() => {
+          inputDom.current.focus();
+        }}
+      />
+    </div>
+  );
 }
