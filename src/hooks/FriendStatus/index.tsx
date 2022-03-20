@@ -15,7 +15,7 @@ export default function useFriendStatus({ friendID }: { friendID: string }) {
 
       console.log("cleanup");
     };
-  });
+  }, [friendID]);
 
   return isOnline;
 }
