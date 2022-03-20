@@ -9,6 +9,7 @@ import List from "../component/List";
 import Detail from "../component/Detail";
 import Test from "../component/Test";
 import Cat from "../component/Cat";
+import Example from "../component/Example";
 
 export default class App extends Component {
   render() {
@@ -41,7 +42,7 @@ export default class App extends Component {
 // 定义路由
 const routes = (
   <Router history={hashHistory}>
-    <Route path="/app" component={App}>
+    <Route path="/" component={App}>
       {/* IndexRoute 在保持 /app 路径不变的情况下，设置默认的展示页面 */}
       {/* <IndexRoute component={Home}></IndexRoute> */}
 
@@ -55,6 +56,7 @@ const routes = (
       <Route path="/app/detail/:id" component={Detail} />
       <Route path="/app/test" component={Test} />
       <Route path="/app/cat" component={Cat} />
+      <Route path="/app/cat" component={Example} />
     </Route>
   </Router>
 );
