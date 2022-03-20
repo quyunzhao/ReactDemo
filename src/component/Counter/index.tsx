@@ -10,10 +10,17 @@ export default function Counter() {
 
   const prevCount = prevCountRef.current;
 
+  function handleAlertClick() {
+    setTimeout(() => {
+      alert("You clicked on: " + count);
+    }, 3000);
+  }
+
   return (
     <h1>
       Now: {count}, before: {prevCount}
       <button onClick={() => setCount((prevCount) => prevCount + 1)}>+</button>
+      <button onClick={handleAlertClick}>Show alert</button>
     </h1>
   );
 }
