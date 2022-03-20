@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
+import { ChatAPI } from "../../api/ChatAPI";
 
 export default function useFriendStatus({ friendID }: { friendID: string }) {
   const [isOnline, setIsOnline] = useState(null);
 
-  function handleStatusChange(status: any) {
-    setIsOnline(status.isOnline);
-  }
-
   useEffect(() => {
-    // ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange);
+    function handleStatusChange(status: any) {
+      setIsOnline(status.isOnline);
+    }
+    ChatAPI.subscribeFromFriendStatus(friendID, handleStatusChange);
 
     return () => {
-      // ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange);
+      ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange);
+
+      console.log("cleanup");
     };
   });
 
