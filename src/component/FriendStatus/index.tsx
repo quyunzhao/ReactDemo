@@ -1,10 +1,10 @@
 import useFriendStatus from "../../hooks/FriendStatus";
 
-export default function FriendStatus(props: any) {
-  const isOnline = useFriendStatus(props.friend.id);
+export default function FriendStatus({ friend }: any) {
+  const isOnline = useFriendStatus({ friendID: friend.id });
 
   if (isOnline === null) {
-    return "Loading...";
+    return <div>Loading...</div>;
   }
-  return isOnline ? "Online" : "Offline";
+  return isOnline ? <div>Online</div> : <div>Offline</div>;
 }

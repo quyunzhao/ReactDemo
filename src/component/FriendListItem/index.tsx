@@ -1,9 +1,7 @@
 import useFriendStatus from "../../hooks/FriendStatus";
 
-export default function FriendListItem(props: any) {
-  const isOnline = useFriendStatus(props.friend.id);
+export default function FriendListItem({ friend }: any) {
+  const isOnline = useFriendStatus({ friendID: friend.id });
 
-  return (
-    <li style={{ color: isOnline ? "green" : "black" }}>{props.friend.name}</li>
-  );
+  return <li style={{ color: isOnline ? "green" : "gray" }}>{friend.name}</li>;
 }

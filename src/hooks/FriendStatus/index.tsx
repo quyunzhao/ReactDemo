@@ -9,6 +9,7 @@ export default function useFriendStatus({ friendID }: { friendID: string }) {
 
   useEffect(() => {
     // ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange);
+
     return () => {
       // ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange);
     };
