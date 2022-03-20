@@ -8,7 +8,7 @@ export default function Example() {
   useEffect(() => {
     // 使用浏览器的 API 更新页面标题
     document.title = `Hook ${count} times`;
-  });
+  }, [count]);
 
   return (
     <div>
