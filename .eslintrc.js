@@ -4,11 +4,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["plugin:@typescript-eslint/recommended"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {

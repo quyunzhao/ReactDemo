@@ -13,7 +13,9 @@ export default function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount((s) => s + 1)}>Click me</button>
+      <button onClick={() => setCount(0)}>Reset</button>
+      <button onClick={() => setCount((prevCount) => prevCount - 1)}>-</button>
+      <button onClick={() => setCount((prevCount) => prevCount + 1)}>+</button>
     </div>
   );
 }
